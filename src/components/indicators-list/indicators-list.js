@@ -13,13 +13,13 @@ function IndicatorsList() {
   }, []);
 
   return (
-    <section>
+    <section className="indicatorsList">
       <h1>Indicadores económicos</h1>
-      <main className="indicatorsList">
+      <article>
         {indicatorsList.map((indicator) => (
           <Indicator key={indicator.codigo} {...indicator} />
         ))}
-      </main>
+      </article>
     </section>
   );
 }

@@ -1,11 +1,14 @@
 
-h1{
+.indicatorsList {
+  width: 100%;
+}
+.indicatorsList > h1{
   text-align: center;
 }
 
-.indicatorsList{
+.indicatorsList > article{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   grid-gap: 10px;
   grid-auto-rows: minmax(200px, auto);
 }
